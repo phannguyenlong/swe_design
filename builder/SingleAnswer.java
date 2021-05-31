@@ -1,3 +1,4 @@
+package builder;
 public class SingleAnswer extends Answer {
     private int answer;
 

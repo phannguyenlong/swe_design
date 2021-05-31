@@ -1,3 +1,4 @@
+package builder;
 public class TrueFalseQuestion extends Question {
     private int solution; // 1 for true, 0 for false
 

@@ -1,10 +1,12 @@
+package builder;
+
 import java.util.List;
 
-public class MultipleChoiceQuestion extends Question {
+public class MultipleResponseQuestion extends Question {
     private List<String> option;
-    private int solution;
+    private List<Integer> solution;
 
-    public MultipleChoiceQuestion(String content, float weight, List<String> option, int solution) {
+    public MultipleResponseQuestion(String content, float weight, List<String> option, List<Integer> solution) {
         super(content, weight);
         this.option = option;
         this.solution = solution;
@@ -22,4 +24,5 @@ public class MultipleChoiceQuestion extends Question {
     public float getPoint(Answer answer) {
         return answer.checkAnswer(weight, solution);
     }
+
 }

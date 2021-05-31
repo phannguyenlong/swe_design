@@ -1,3 +1,5 @@
+package builder;
+
 abstract class Question {
     protected String content;
     protected float weight;
