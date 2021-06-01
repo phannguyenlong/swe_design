@@ -1,6 +1,7 @@
 package adapter.object_adapter.adapter;
 
 import adapter.object_adapter.phone.LightningPhone;
+import adapter.object_adapter.phone.MircoUSBPhone;
 
 public class MicroUSBToLightningAdapter implements LightningPhone {
     private final MircoUSBPhone mircoUSBPhone;

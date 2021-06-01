@@ -1,7 +1,5 @@
 package adapter.object_adapter.phone;
 
-import adapter.object_adapter.adapter.MircoUSBPhone;
-
 public class Android implements MircoUSBPhone {
     private boolean connector;
 

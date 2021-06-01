@@ -1,7 +1,5 @@
 package adapter.object_adapter.phone;
 
-import adapter.object_adapter.adapter.MircoUSBPhone;
-
 public class Huwaei implements MircoUSBPhone {
     private boolean connector;
     

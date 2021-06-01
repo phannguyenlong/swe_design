@@ -1,12 +1,12 @@
 package adapter.object_adapter;
 
+import adapter.object_adapter.adapter.LightningToMicroUSBAdapter;
 import adapter.object_adapter.adapter.MicroUSBToLightningAdapter;
-import adapter.object_adapter.adapter.MircoUSBPhone;
 import adapter.object_adapter.phone.Android;
 import adapter.object_adapter.phone.Huwaei;
 import adapter.object_adapter.phone.Iphone;
 import adapter.object_adapter.phone.LightningPhone;
-import adapter.object_adapter.phone.LightningToMicroUSBAdapter;
+import adapter.object_adapter.phone.MircoUSBPhone;
 
 public class Client {
     static void rechargeMicroUSBPhone(MircoUSBPhone phone) {
