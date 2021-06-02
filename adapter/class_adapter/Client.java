@@ -39,7 +39,7 @@ public class Client {
          */
         // recharge Iphone with MircoUSB
         System.out.println("============Recharge with Iphone to MicroUSB adapter============");
-        rechargeMicroUSBPhone(new IPhoneToMicroUSBAdapter(iphone));
+        rechargeMicroUSBPhone(new IPhoneToMicroUSBAdapter());
 
         /**
          * Explain
@@ -50,10 +50,10 @@ public class Client {
          */
         // recharge Android with lightning
         System.out.println("============Recharge Android to Lighning adapter============");
-        rechargeLightningPhone(new AndroidToLighningAdapter(android));
+        rechargeLightningPhone(new AndroidToLighningAdapter());
         
         // recharge with other MicroUSBPhone
         System.out.println("============Test to recharge Huawei with other MircoUSBPhone============");
-        rechargeLightningPhone(new HuaweiToLighningAdapter(huwaei));
+        rechargeLightningPhone(new HuaweiToLighningAdapter());
     }    
 }
