@@ -1,0 +1,4 @@
+- **TOURNAMENT**: is interface
+- **GAME**: client
+- **Player**: leaf
+- **PlayerMatch**: composite object
