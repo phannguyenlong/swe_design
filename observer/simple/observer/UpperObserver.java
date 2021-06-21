@@ -5,7 +5,6 @@ package observer.simple.observer;
  */
 public class UpperObserver implements Observer {
 
-
     @Override
     public void start(String line) {
         System.out.println("Uppercase: " + line.toUpperCase());

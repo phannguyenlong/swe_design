@@ -8,5 +8,6 @@ package observer.simple.observer;
  */
 public interface Observer {
 
+    // method to start the Observer
     public void start(String line);
 }

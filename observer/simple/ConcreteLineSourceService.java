@@ -7,7 +7,7 @@ import java.util.Scanner;
 import observer.simple.observer.Observer;
 
 /**
- * This is the implementation of the the Service
+ * This is the implementation of the the Subject (Service)
  * This will has the list to hold all reigstered Observer
  * It will content method for client adding Observer and method for client run all observer that is added
  * It also inform the observer with change for the client

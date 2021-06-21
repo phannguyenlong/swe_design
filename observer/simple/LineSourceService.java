@@ -3,7 +3,7 @@ package observer.simple;
 import observer.simple.observer.Observer;
 
 /**
- * This is the Serive interface
+ * This is the Subject interface
  * It will content method for client adding Observer and method for client run all observer that is added
  * It also inform the observer with change for the client
  */
