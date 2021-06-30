@@ -18,8 +18,8 @@ public class VerticalScrollBarDecorator extends WindowDecorator{
 
     @Override
     public void draw() {
-        super.draw();
         drawVerticalScrollBar();
+        super.draw();
     }
 
     @Override

@@ -18,8 +18,8 @@ public class HorizontalScrollBarDecorator extends WindowDecorator{
 
     @Override
     public void draw() {
-        super.draw();
         drawHorizontalScrollBar();
+        super.draw();
     }
 
     @Override
