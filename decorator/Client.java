@@ -12,14 +12,14 @@ public class Client {
 
         System.out.println("\n===================Simple window===================");
         // simple window
-        System.out.println("Description: " + simpleWindow.getDescription());
         simpleWindow.draw();
+        System.out.println("Description: " + simpleWindow.getDescription());
 
         System.out.println("\n====================with Verical==================");
         // simpel window with vertical scrollbar
         Window vScrollWindow = new VerticalScrollBarDecorator(simpleWindow);
-        System.out.println("Description: " + vScrollWindow.getDescription());
         vScrollWindow.draw();
+        System.out.println("Description: " + vScrollWindow.getDescription());
 
         /**
          * Cause java pass object by refference 
@@ -28,12 +28,13 @@ public class Client {
         System.out.println("\n===================with vertical and horizontal===================");
         // simple window with fulll scrollbar
         Window fullWindow= new HorizontalScrollBarDecorator(simpleWindow);
+        fullWindow.draw();
         System.out.println("Description: " + fullWindow.getDescription());
         
         System.out.println("\n===================with horizontal===================");
         // simple window with horizontal scrollbar
         Window hScrollWindow = new HorizontalScrollBarDecorator(anotherSimpleWindow);
-        System.out.println("Description: " + hScrollWindow.getDescription());
         hScrollWindow.draw();
+        System.out.println("Description: " + hScrollWindow.getDescription());
     }    
 }
