@@ -1,8 +1,15 @@
 package exam.phase1.questionthree;
 
 public class Member extends User {
-    public Member(String code) {
-        this.code = code;
+    public Member(String code, boolean registerNotify) {
+        super(code, registerNotify);
+    }
+
+    public void registerCenter(SportCenter center) {
+        // let customer decided to add themself to notify or not
+        if (this.registerNotify) {
+            center.addUser(this);
+        }
     }
 
     @Override

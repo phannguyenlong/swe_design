@@ -7,19 +7,19 @@ public class Demo {
         SportCenter center1 = new SportCenter("Center 1");
         SportCenter center2 = new SportCenter("Center 2");
 
-        // create member
-        Member member1 = new Member("member 1");
-        Member member2 = new Member("member 2");
-        Member member3 = new Member("member 3");
-        Trainer trainer1 = new Trainer("trainer 1");
+        // create member and assign center
+        Member member1 = new Member("member 1", true);
+        Member member2 = new Member("member 2", false);
+        Member member3 = new Member("member 3", true);
+        Trainer trainer1 = new Trainer("trainer 1", false);
 
         // asgin memeber for center
-        center1.addUser(member1);
-        center1.addUser(member2);
-        center1.addUser(trainer1);
+        member1.registerCenter(center1);
+        member2.registerCenter(center1);
+        trainer1.registerCenter(center1);
 
-        center2.addUser(member1);
-        center2.addUser(member3);
+        member1.registerCenter(center2);
+        member3.registerCenter(center2);
 
         // set state for center
         center1.setState(1);
