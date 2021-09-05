@@ -5,13 +5,6 @@ public class Member extends User {
         super(code, registerNotify);
     }
 
-    public void registerCenter(SportCenter center) {
-        // let customer decided to add themself to notify or not
-        if (this.registerNotify) {
-            center.addUser(this);
-        }
-    }
-
     @Override
     public void update(SportCenter center) {
        System.out.println("Member " + this.code + " acknowledges that center " + center.getCode() + " has change to state " + center.getState());

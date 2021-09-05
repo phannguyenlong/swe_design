@@ -17,7 +17,15 @@ public abstract class User {
         this.code = code;
     }
 
+    public void registerCenter(SportCenter center) {
+        center.addUser(this); // add user to center
+
+        // let customer decided to add themself to notify or not
+        if (this.registerNotify) {
+            center.addRegisteredNotifyUser(this);
+        }
+    };
+
     public abstract void update(SportCenter center);
 
-    public abstract void registerCenter(SportCenter center);
 }

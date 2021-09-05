@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 // act as Observer Subject
 public class SportCenter {
-    ArrayList<User> members = new ArrayList<User>(); // list for containing user
+    ArrayList<User> members = new ArrayList<User>(); // list for containing users
+    ArrayList<User> registerNotifyUser = new ArrayList<>(); // list for users register for notify when change state
     protected String code;
     protected int state;
     
@@ -14,7 +15,7 @@ public class SportCenter {
 
     public void setState(int state) {
         this.state = state;
-        notifyUser(); // use for notify all user when it change states
+        notifyUser(); // use for notify registered users when it change states
     }
 
     public int getState() {
@@ -29,6 +30,10 @@ public class SportCenter {
         return code;
     }
 
+    public ArrayList<User> getAllUsers() {
+        return members;
+    }
+
     public void addUser(User user) {
         members.add(user);
     }
@@ -37,9 +42,16 @@ public class SportCenter {
         members.remove(user);
     }
 
+    public void addRegisteredNotifyUser(User user) {
+        registerNotifyUser.add(user);
+    }
+
+    public void removeRegisteredNotifyUser(User user) {
+        registerNotifyUser.remove(user);
+    }
+
     private void notifyUser() {
-        for (User user : members) {
+        for (User user : registerNotifyUser) 
             user.update(this);
-        }
     }
 }
