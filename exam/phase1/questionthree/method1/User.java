@@ -1,4 +1,4 @@
-package exam.phase1.questionthree;
+package exam.phase1.questionthree.method1;
 
 public abstract class User {
     protected String code;

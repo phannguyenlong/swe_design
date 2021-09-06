@@ -1,4 +1,4 @@
-package exam.phase1.questionthree;
+package exam.phase1.questionthree.method1;
 
 import java.util.ArrayList;
 

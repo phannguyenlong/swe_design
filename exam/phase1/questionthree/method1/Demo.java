@@ -1,6 +1,7 @@
-package exam.phase1.questionthree;
+package exam.phase1.questionthree.method1;
 
 // using observer design pattern
+// 1st method remomve manager and let sport center hold 2 array (1 for list of users, 1 for user register for notify)
 public class Demo {
     public static void main(String[] args) {
         // create center

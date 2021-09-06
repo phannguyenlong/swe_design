@@ -1,7 +1,7 @@
-package exam.phase1.questionthree;
+package exam.phase1.questionthree.method1;
 
-public class Member extends User {
-    public Member(String code, boolean registerNotify) {
+public class Trainer extends User{
+    public Trainer(String code, boolean registerNotify) {
         super(code, registerNotify);
     }
 
