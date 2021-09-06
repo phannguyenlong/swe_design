@@ -3,12 +3,12 @@ package exam.phase2.questiontwo.decorator;
 import exam.phase2.questiontwo.Booking;
 
 public class TowelDecorator extends BookingDecorator {
-    public TowelDecorator(Booking booking) {
+    public TowelDecorator(Booking booking, int quantity) {
         super(booking);
-        registerTowel(); // call aditional function that booking don't have
+        registerTowel(quantity); // call aditional function that booking don't have
     }
     
-    private void registerTowel() {
-        this.price += 1; // add fee for towel
+    private void registerTowel(int quantity) {
+        this.price += 1 * quantity; // add fee for towel
     }
 }

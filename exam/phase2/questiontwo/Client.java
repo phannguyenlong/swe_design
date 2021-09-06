@@ -10,19 +10,19 @@ public class Client {
         Booking badminton = new Badminton(); // client register class badminton
         System.out.println(badminton.getPrice());
 
-        Booking badminton_Parking = new ParkingDecorator(badminton); // register parking for badminton
+        Booking badminton_Parking = new ParkingDecorator(badminton, 1); // register parking for badminton
         System.out.println(badminton_Parking.getPrice());
 
-        Booking badminton_Parking_Towel = new TowelDecorator(badminton_Parking); // register towel for badminton
+        Booking badminton_Parking_Towel = new TowelDecorator(badminton_Parking, 2); // register towel for badminton
         System.out.println(badminton_Parking_Towel.getPrice());
 
-        Booking badminton_Parking_Towel_Carbinet = new CabinetDecorator(badminton_Parking); // register carbinet for badminton
+        Booking badminton_Parking_Towel_Carbinet = new CabinetDecorator(badminton_Parking_Towel, 2); // register carbinet for badminton
         System.out.println(badminton_Parking_Towel_Carbinet.getPrice());
 
         Booking zumba = new Zumba(); // client register class zumba
         System.out.println(zumba.getPrice());
 
-        Booking zuma_Carbinet = new CabinetDecorator(zumba); // register carbinet for zumba
+        Booking zuma_Carbinet = new CabinetDecorator(zumba, 3); // register carbinet for zumba
         System.out.println(zuma_Carbinet.getPrice());
     }
 }
